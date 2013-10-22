@@ -1,12 +1,12 @@
 ![](http://i1296.photobucket.com/albums/ag1/adrihg89/Piedra_papel_tijeras_zpsf31ae8ab.jpg)
 
-Práctica 4 - Añadir CSS a nuestra aplicacion RPS:
+Práctica 5 - Añada Pruebas a Rock, Paper,Scissors:
 ===========
  
 1. Objetivo
 -----------
 
-Partiendo de la practica 3 deberemos añadir hojas de estilo css para que la apariencia de nuestra aplicacion sea mas moderna y dinamica.
+Partiendo de la practica 4 deberemos usar ahora pruebas unitarias y TDD (rspec).
 
 
 2. Instalación
