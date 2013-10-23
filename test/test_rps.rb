@@ -41,4 +41,8 @@ class Test_RPS < Test::Unit::TestCase
 		assert last_response.body.include?("<h2>Jugador</h2>"), "El body debe contener Jugador."
 	end
 
+	def test_footer
+        get"/"
+        assert_match "<p>© 2013 Sistemas y Tecnologias Web - ETSII</p>", last_response.body
+    end
 end
