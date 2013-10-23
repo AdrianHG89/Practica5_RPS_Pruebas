@@ -1,6 +1,6 @@
 require 'test/unit'
 require 'rack/test'
-require './lib/RockPaperScissors'
+require './lib/rps.rb'
 
 class Test_RPS < Test::Unit::TestCase
 	include Rack::Test::Methods
@@ -8,7 +8,7 @@ class Test_RPS < Test::Unit::TestCase
 	def app
 		Rack::Builder.new do
 			run RockPaperScissors::RPS.new
-		end
+		end.to_app
 	end
 
 	def test_index
@@ -18,7 +18,7 @@ class Test_RPS < Test::Unit::TestCase
 
 	def test_body
 		get "/"
-		assert_equal last_response.body, 'Vs.', "El body debe contener la Vs."
+		assert last_response.body.include?("Maquina"), "El body debe contener la Vs."
 	end
 
 end
