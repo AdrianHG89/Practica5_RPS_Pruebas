@@ -21,6 +21,11 @@ class Test_RPS < Test::Unit::TestCase
 		assert last_response.body.include?("<title>Practica - Piedra, Papel o Tijera</title>"), "El titulo debe ser 'Practica - Piedra, Papel o Tijera'"
     end
 
+    def test_navbar
+    	get "/"
+    	assert_match "<a class='brand' href='https://github.com/AdrianHG89/Practica4_RPS_Haml-CSS'>Practica 3 - Juego Piedra, Papel o Tijera - STW-ETSII</a>", last_response.body
+    end
+
 	def test_hero_unit
 		get "/"
 		assert last_response.body.include?("<h1>Juega a Piedra, Papel o Tijera</h1>"), "La zona destacada debe tener este mensaje: Juega a Piedra, Papel o Tijera'."
