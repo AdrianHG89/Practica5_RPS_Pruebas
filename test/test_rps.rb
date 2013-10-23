@@ -18,7 +18,9 @@ class Test_RPS < Test::Unit::TestCase
 
 	def test_body
 		get "/"
-		assert last_response.body.include?("Maquina"), "El body debe contener la Vs."
+		assert last_response.body.include?("Maquina"), "El body debe contener Maquina."
+		assert last_response.body.include?("Vs"), "El body debe contener Vs."
+		assert last_response.body.include?("Jugador"), "El body debe contener Jugador."
 	end
 
 end
