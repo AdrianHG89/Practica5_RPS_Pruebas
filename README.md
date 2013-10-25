@@ -17,10 +17,18 @@ Instalaremos las gemas necesarias: bundle install
 3. Ejecución
 ------------
 
-Para ejecutar la aplicacion deberemos hacer lo siguiente:
+* Para ejecutar la aplicacion deberemos hacer lo siguiente:
 
 1. En la consola escribir rake. Entonces ahora ya nuestra aplicación esta arrancada.
 2. Iremos a 'http://localhost:8080/' en nuestro navegador para poder usar la aplicación y empezar a jugar.
+
+* Para ejecutar con rake las pruebas unitarias:
+
+1. rake test
+
+* Para ejecutar con rake Rspec:
+
+1. rake spec
 
 4.Desarrollador
 ---------------
